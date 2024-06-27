@@ -1,0 +1,14 @@
+.App {
+  position: relative;  
+  min-height: 100vh;  
+  overflow-x: hidden; 
+}
+
+
+.content {
+  position: relative; 
+  z-index: 1;  
+  padding: 20px;
+  box-sizing: border-box; 
+  min-height: 100vh;  
+}

@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.nav-item i {
+    margin-right: 8px;  /* Space between icon and text */
+}
+
+.nav-item:hover {
+    color: #aaa;  /* Hover effect */
+}
