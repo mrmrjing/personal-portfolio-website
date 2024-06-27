@@ -32,68 +32,13 @@ h1, h2 {
 }
 
 .container {
-  padding: 20px;
+  padding: 50px 20px; /* Increased padding for better focus on content */
   max-width: 1200px;
   margin: 0 auto; /* Centering the content */
+  text-align: center; /* Ensure content is centered */
+  background: url('../../../public/sphere-texture.jpg') no-repeat center center/cover; /* Add a background image */
+  color: #fff; /* Ensures text is visible on darker backgrounds */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5); /* Optional: Adds depth with a shadow */
 }
 
-.footer {
-  background-color: #282c34;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-.contact-container {
-  width: 100%;
-  max-width: 500px; /* Adjust width as needed */
-  margin: 40px auto;
-  padding: 20px;
-  background: #121212; /* Dark background */
-  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.1); /* Subtle white shadow for depth */
-  border-radius: 8px;
-  color: #fff; /* Ensuring text is white */
-}
-
-.contact-container h1, .contact-container p {
-  text-align: center;
-  color: #fff; /* White text for headings and paragraphs */
-}
-
-.contact-container form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-container label {
-  color: #ccc; /* Light gray for labels */
-  margin-top: 10px; /* Spacing above labels */
-}
-
-input[type='text'],
-input[type='email'],
-textarea {
-  padding: 10px;
-  margin-top: 5px;
-  background: #333; /* Darker background for inputs */
-  border: 1px solid #555; /* Slightly lighter border for contrast */
-  border-radius: 4px;
-  color: #fff; /* White text inside inputs */
-}
-
-button[type='submit'] {
-  padding: 10px 15px;
-  color: #fff;
-  background-color: #007BFF;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  margin-top: 20px; /* Extra space above the button */
-}
-
-button[type='submit']:hover {
-  background-color: #0056b3;
-}

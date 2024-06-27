@@ -1,14 +1,25 @@
 .App {
-  position: relative;  
-  min-height: 100vh;  
-  overflow-x: hidden; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* Make sure the app container is at least the height of the viewport */
+  width: 100%;  
+  overflow-x: hidden;  
 }
 
-
 .content {
-  position: relative; 
-  z-index: 1;  
+  flex: 1;  /* Allows the content to expand and occupy available space, pushing the footer down */
   padding: 20px;
-  box-sizing: border-box; 
-  min-height: 100vh;  
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

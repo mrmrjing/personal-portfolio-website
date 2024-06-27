@@ -3,18 +3,24 @@
     color: #fff;
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 20px 0;
+    align-items: center;
+    font-size: 20px;
+
 }
 
 .nav-item {
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px;
+    display: inline-flex;
+    align-items: center;
     font-size: 16px;
 }
 
 .nav-item i {
-    margin-right: 8px;  /* Space between icon and text */
+    margin-right:10px;  /* Space between icon and text */
+    font-size: 24px;
 }
 
 .nav-item:hover {
