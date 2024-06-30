@@ -10,16 +10,3 @@
   flex: 1;  /* Allows the content to expand and occupy available space, pushing the footer down */
   padding: 20px;
 }
-
-footer {
-  text-align: center;
-  background-color: #333;
-  color: white;
-  padding: 20px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
