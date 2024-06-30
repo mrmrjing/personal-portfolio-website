@@ -16,7 +16,7 @@ const PDFViewer = ({ file }) => {
         <div>
             {/* Check if the file is provided */}
             {file ? (
-                <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.10.377/build/pdf.worker.min.js">
+                <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
                     <div style={{ height: '750px' }}>
                         <Viewer
                             fileUrl={file}

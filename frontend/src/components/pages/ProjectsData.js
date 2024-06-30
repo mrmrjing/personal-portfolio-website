@@ -5,7 +5,7 @@ const projectsData = [
       description: 'A comprehensive tool designed to audit and report network security vulnerabilities.',
       imageUrl: '/path/to/image1.jpg',
       githubUrl:'https://github.com/mrmrjing/PhishingEmailClassification',
-      pdf:'../../../../PhishingEmailClassification.pdf',
+      pdf:'./PhishingEmailClassification.pdf',
     },
     {
       id: 2,
