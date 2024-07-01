@@ -4,6 +4,8 @@ import projectsData from './ProjectsData';
 import PDFViewer from '../common/PDF.js';
 import ViewPDFButton from '../common/ViewPDFButton.js';
 
+import '../../assets/styles/PDFViewer.css';
+
 const ProjectDetailPage = () => {
   const { projectId } = useParams();
   const project = projectsData.find(p => p.id.toString() === projectId);
@@ -23,17 +25,25 @@ const ProjectDetailPage = () => {
       setShowPDF(!showPDF);
   };
 
+   // Function to handle GitHub link redirection
+   const redirectToGitHub = () => {
+    window.location.href = project.githubUrl;
+  };
+
   return (
-      <div className="project-detail-container">
-          <h1>{project.title}</h1>
-          <img src={project.imageUrl} alt={project.title} />
-          <p>{project.description}</p>
-          {/* Conditionally render PDF Viewer */}
-          {showPDF && <PDFViewer file={pdfUrl} />}
-          {/* Button to toggle PDF visibility */}
-          <ViewPDFButton onClick={togglePDFVisibility} />
-      </div>
-  );
+    <div className="project-detail-container">
+        <h1>{project.title}</h1>
+        <p>{project.description}</p>
+        {/* Conditionally render PDF Viewer with a specific style or class */}
+        {showPDF && <PDFViewer file={pdfUrl} className="pdfViewer" />}
+        {/* Button to toggle PDF visibility */}
+        <ViewPDFButton onClick={togglePDFVisibility} />
+        {/* Conditionally render GitHub link button if the URL exists */}
+        {project.githubUrl && (
+          <button onClick={redirectToGitHub} style={{ margin: '10px', padding: '8px 15px', fontSize: '16px', cursor: 'pointer' }}>View on GitHub</button>
+        )}
+    </div>
+);
 };
 
 export default ProjectDetailPage;

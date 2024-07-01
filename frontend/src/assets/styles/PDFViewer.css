@@ -1,0 +1,14 @@
+.pdfViewer {
+    width: 800px; /* Adjust width as needed */
+    height: 700px; /* Adjust height as needed */
+    overflow: hidden;
+    border: 1px solid #ccc; /* Optional, adds a border around the PDF viewer */
+    margin: 20px auto; /* Center the viewer horizontally and add space around it */
+}
+
+.project-detail-container {
+    width: 800px; /* Adjust width as needed */
+    height: 900px; /* Adjust height as needed */
+    overflow: hidden;
+    margin: auto; /* Center the viewer */
+}
