@@ -30,6 +30,11 @@ const ProjectDetailPage = () => {
     window.location.href = project.githubUrl;
   };
 
+  // Function to handle YouTube link redirection
+    const redirectToYouTube = () => {
+        window.location.href = project.youtubeUrl;
+    };
+
   return (
     <div className="project-detail-container">
         <h1>{project.title}</h1>
@@ -41,6 +46,9 @@ const ProjectDetailPage = () => {
         {/* Conditionally render GitHub link button if the URL exists */}
         {project.githubUrl && (
           <button onClick={redirectToGitHub} style={{ margin: '10px', padding: '8px 15px', fontSize: '16px', cursor: 'pointer' }}>View on GitHub</button>
+        )}
+         {project.youtubeUrl && (
+        <button onClick={redirectToYouTube} style={{ margin: '10px', padding: '8px 15px', fontSize: '16px', cursor: 'pointer' }}>View on YouTube</button>
         )}
     </div>
 );
