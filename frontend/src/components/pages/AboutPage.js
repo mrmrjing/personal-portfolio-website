@@ -6,7 +6,7 @@ const AboutPage = () => {
         <div className="about-container">
             <h1>About Me</h1>
             <div className="about-content">
-                <img src="/path/to/your-image.jpg" alt="Your Name" className="profile-image" />
+                <img src="/Personal Profile Pic.JPG" alt="Toh Hong Jing" className="profile-image" />
                 <div className="about-text">
                     <p>Hello! I'm <strong>Toh Hong Jing</strong>, an aspiring cybersecurity professional with basic experience in network security, data protection, and software security. I am currently pursuing my computer science degree and actively involved in several cybersecurity projects.</p>
                     <p>My goal is to help organizations secure their digital assets and protect their data from unauthorized access. I am passionate about cybersecurity and always eager to learn new things in this field.</p>

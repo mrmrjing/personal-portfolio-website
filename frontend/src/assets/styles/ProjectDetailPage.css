@@ -1,0 +1,27 @@
+.project-detail-container {
+    color: white; /* Sets the text color to white for all text within the container */
+    background-color: #333; /* Dark background for the container */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    font-family: Arial, sans-serif; 
+}
+
+.project-detail-container h1, .project-detail-container p {
+    margin-bottom: 20px; /* Adds bottom margin for spacing between elements */
+}
+
+.project-detail-container a:hover, .project-detail-container button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Additional styles for PDF Viewer and Image Gallery */
+.pdfViewer {
+    background: #fff; /* Light background for the PDF viewer for better visibility */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.image-gallery {
+    margin-top: 20px; /* Adds space above the gallery */
+}

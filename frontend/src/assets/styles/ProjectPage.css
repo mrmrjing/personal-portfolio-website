@@ -1,23 +1,63 @@
 .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Responsive grid setup */
+  gap: 40px;  /* Uniform gap between cards */
+  padding: 20px;
+}
   
-  .project-card {
-    width: 300px;
-    margin: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Aligns content to the top and button to the bottom */
+  min-height: 450px; /* Minimum height for all cards */
+  height: auto; /* Allows cards to expand based on content */
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+}
+
+
+  .project-card h3 {
+    color: rgb(17, 8, 8); /* Changes the project title to white */
+  }
+
+  .project-card p {
+      color: rgb(7, 3, 3); /* Changes the project description to white */
+  }
+
+  
+  .featured-projects-container {
+    padding: 20px;
+    background-color: #f0f0f0; /* Light grey background */
     text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
-  .project-image {
-    width: 100%;
-    height: 200;
-    object-fit: contain;
-    border-radius: 4px;
-  }
-  
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust based on how many columns you want */
+    gap: 20px;
+}
+
+.project-card img {
+  width: 100%; /* Full width images within cards */
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Cover the entire content box without stretching */
+  border-radius: 4px; /* Rounded corners */
+  margin-bottom: 15px;
+}
+
+.button {
+  align-self: center; /* Center button horizontally */
+  margin-top: auto; /* Pushes the button to the bottom */
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: block; /* Block display for full width */
+}
