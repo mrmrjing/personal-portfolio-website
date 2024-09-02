@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';  
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -9,7 +9,7 @@ const HeroSection = () => {
         <p>I am an aspiring cybersecurity professional.</p>
         <Link to="/projects" className="button">View My Projects</Link>
       </div>
-      <img src="/cyber-wallpaper.jpg" alt="Profile" style={{ width: '400px', height: '300px', borderRadius: '0%' }} />
+      <img src={`${process.env.PUBLIC_URL}/cyber-wallpaper.jpg`} alt="Profile" style={{ width: '400px', height: '300px', borderRadius: '0%' }} />
     </div>
   );
 };

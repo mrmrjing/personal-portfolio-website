@@ -11,14 +11,13 @@ import ProjectDetailPage from './components/pages/ProjectDetailPage';
 import projectsData from './components/pages/ProjectsData';
 import './App.css';
 
-
 function App() {
   return (
-      <Router>
+      <Router basename="/personal-portfolio-website">
           <div className="App">
-              <StarsBackground />  
+              <StarsBackground />
               <Navbar />
-              <div className="content"> 
+              <div className="content">
                   <Routes>
                       <Route path="/" element={<HomePage />} />
                       <Route path="/projects" element={<ProjectsPage />} />
