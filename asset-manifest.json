@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mrmrjing/personal-portfolio-website/static/css/main.35dc8aba.css",
+    "main.js": "/mrmrjing/personal-portfolio-website/static/js/main.a7feccb8.js",
+    "index.html": "/mrmrjing/personal-portfolio-website/index.html",
+    "main.35dc8aba.css.map": "/mrmrjing/personal-portfolio-website/static/css/main.35dc8aba.css.map",
+    "main.a7feccb8.js.map": "/mrmrjing/personal-portfolio-website/static/js/main.a7feccb8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35dc8aba.css",
+    "static/js/main.a7feccb8.js"
+  ]
+}
