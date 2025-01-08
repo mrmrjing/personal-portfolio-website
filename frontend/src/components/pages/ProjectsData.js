@@ -254,7 +254,7 @@ const projectsData = [
     description: 'This DApp is a blockchain-powered solution designed to securely record and manage patients’ personal and medical information. By integrating blockchain technology with IPFS storage, the application ensures that data is immutable, tamper-proof, and stored in a decentralized system, significantly reducing the risk of data breaches. It empowers patients with full control over their sensitive information, enhancing privacy and transparency in interactions with medical providers.',
     imageUrl: `${process.env.PUBLIC_URL}/Decentralised-healthcare-application/Hardhat.png`,
     githubUrl: 'https://github.com/mrmrjing/Healthcare-DApp-hardhat',
-    pdf: `Decentralised-healthcare-application/Blockchain_Technology_Decentralised_Application_Report`,
+    pdf: `Decentralised-healthcare-application/Blockchain_Technology_Decentralised_Application_Report.pdf`,
     featured: false
   },
 ];
