@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* Make sure the app container is at least the height of the viewport */
+  width: 100%;  
+  overflow-x: hidden;  
+}
+
+.content {
+  flex: 1;  /* Allows the content to expand and occupy available space, pushing the footer down */
+  padding: 20px;
+}
