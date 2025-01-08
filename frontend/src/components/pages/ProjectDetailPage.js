@@ -20,7 +20,7 @@ const ProjectDetailPage = () => {
   }
 
   // Construct the PDF file URL
-  const pdfUrl = `${process.env.PUBLIC_URL}/${project.pdf}`;
+  const pdfUrl = project.pdf ? `${process.env.PUBLIC_URL}/${project.pdf}` : null;
 
   // Function to toggle PDF visibility
   const togglePDFVisibility = () => {
@@ -37,7 +37,7 @@ const ProjectDetailPage = () => {
         <h1>{project.title}</h1>
         <p>{project.description}</p>
         {/* Conditionally render PDF Viewer with a specific style or class */}
-        {showPDF && <PDFViewer file={pdfUrl} className="pdfViewer" />}
+        {showPDF && pdfUrl && <PDFViewer file={pdfUrl} className="pdfViewer" />}
         {project.images && project.images.length > 0 && (
         <ImageGallery items={project.images} />
       )}
