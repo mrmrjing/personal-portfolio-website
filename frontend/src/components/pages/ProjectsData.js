@@ -255,6 +255,7 @@ const projectsData = [
     imageUrl: `${process.env.PUBLIC_URL}/Decentralised-healthcare-application/Hardhat.png`,
     githubUrl: 'https://github.com/mrmrjing/Healthcare-DApp-hardhat',
     pdf: `Decentralised-healthcare-application/Blockchain_Technology_Decentralised_Application_Report.pdf`,
+    youtubeUrl: 'https://youtu.be/wnP7SJZgpw0',
     featured: false
   },
 ];
