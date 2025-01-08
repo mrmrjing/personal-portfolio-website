@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import projectsData from './ProjectsData';
 import PDFViewer from '../common/PDF.js';
-import ViewPDFButton from '../common/ViewPDFButton.js';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import ImageGallery from 'react-image-gallery';
 
@@ -53,11 +52,23 @@ const ProjectDetailPage = () => {
     marginBottom: '15px',
     lineHeight: '1.6',
     fontSize: '1rem',
-    textAlign: 'justify',
+    textAlign: 'left',
+  };
+
+  const buttonContainerStyle = {
+    display: 'flex', // Align buttons in a row
+    justifyContent: 'center', // Center buttons horizontally
+    alignItems: 'center', // Align buttons vertically
+    flexWrap: 'wrap', // Allow buttons to wrap on smaller screens
+    gap: '10px', // Add spacing between buttons
+    marginTop: '20px',
   };
 
   const buttonStyle = {
-    margin: '10px',
+    display: 'flex', // Make buttons flex containers
+    justifyContent: 'center', // Center text horizontally
+    alignItems: 'center', // Center text vertically
+    height: '50px', // Ensure consistent height
     padding: '10px 20px',
     fontSize: '1rem',
     color: 'white',
@@ -65,6 +76,7 @@ const ProjectDetailPage = () => {
     cursor: 'pointer',
     textDecoration: 'none',
     transition: 'background-color 0.3s ease, transform 0.2s ease',
+    textAlign: 'center', // Ensure proper text alignment
   };
 
   const pdfViewerStyle = {
@@ -98,16 +110,20 @@ const ProjectDetailPage = () => {
       )}
 
       {/* Buttons */}
-      <div style={{ textAlign: 'center', marginTop: '20px' }}>
-        <ViewPDFButton
+      <div style={buttonContainerStyle}>
+        {/* View PDF Button */}
+        <button
           onClick={togglePDFVisibility}
           style={{
             ...buttonStyle,
             backgroundColor: '#007bff',
             border: 'none',
           }}
-        />
+        >
+          View PDF
+        </button>
 
+        {/* View on GitHub */}
         {project.githubUrl && (
           <a
             href={project.githubUrl}
@@ -122,6 +138,7 @@ const ProjectDetailPage = () => {
           </a>
         )}
 
+        {/* View on YouTube */}
         {project.youtubeUrl && (
           <button
             onClick={redirectToYouTube}
@@ -135,6 +152,7 @@ const ProjectDetailPage = () => {
           </button>
         )}
 
+        {/* View Report */}
         {project.pdf && (
           <a
             href={pdfUrl}
