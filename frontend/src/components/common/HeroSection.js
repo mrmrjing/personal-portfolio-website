@@ -1,15 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
-    <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '50px 20px' }}>
-      <div style={{ maxWidth: '60%' }}>
-        <h1>Welcome to My Personal Portfolio</h1>
-        <p>I am an aspiring cybersecurity professional.</p>
-        <Link to="/projects" className="button">View My Projects</Link>
-      </div>
-      <img src={`${process.env.PUBLIC_URL}/cyber-wallpaper.jpg`} alt="Profile" style={{ width: '400px', height: '300px', borderRadius: '0%' }} />
+    <div className="text-center py-5 bg-dark text-white">
+      <h1>I am an aspiring cybersecurity professional</h1>
+      <p>Check out my latest projects below.</p>
+      <a href="personal-portfolio-website/projects" className="btn btn-primary mt-3">
+        View My Projects
+      </a>
     </div>
   );
 };
