@@ -210,31 +210,31 @@ const projectsData = [
   },
   {
     id: 12,
-    title: 'workout Analytics',
+    title: 'Workout Analytics',
     description: 'Jupyter notebook project to visualise and anaylse the trends in my workout data mauallly inputted from my workout sessions.',
-    imageUrl: `${process.env.PUBLIC_URL}/workout-tracker/analytics.jpg`,
+    imageUrl: `${process.env.PUBLIC_URL}/workout-analytics-python/analytics.png`,
     githubUrl: 'https://github.com/mrmrjing/workout-analytics-python',
     featured: false
   },
   {
     id: 13,
-    title: 'raspberry-pi-firewall',
+    title: 'Raspberry Pi Firewall',
     description: 'This project aims to configure a secure and efficient firewall on a Raspberry Pi 5 using iptables to control and filter incoming and outgoing network traffic.',
-    imageUrl: `${process.env.PUBLIC_URL}/raspberrypi-firewall/firewall.jpg`,
+    imageUrl: `${process.env.PUBLIC_URL}/raspberry-pi-firewall/firewall.jpg`,
     githubUrl: 'https://github.com/mrmrjing/raspberry-pi-firewall',
     featured: true
   },
   {
     id: 14,
-    title: 'python-web-scraper-ycombinator',
+    title: 'Python Web Scraper Ycombinator',
     description: 'This project contains a Python script for scraping news articles from Hacker News and sending them via email. It automates the fetching of the latest news titles and links, and emails them.',
-    imageUrl: `${process.env.PUBLIC_URL}/python-web-scraper-ycombinator/web.jpg`,
+    imageUrl: `${process.env.PUBLIC_URL}/python-web-scraper-ycombinator/web.png`,
     githubUrl: 'https://github.com/mrmrjing/python-web-scraper-ycombinator',
     featured: false 
   }, 
   {
     id: 15,
-    title: 'python-network-scanner',
+    title: 'Python Network Scanner',
     description: 'This Python Network Scanner allows users to scan specified IP ranges and port ranges within a network. It identifies hosts that are up and checks for open ports on these hosts, providing insights into network security and configuration. This tool leverages the python-nmap library, which is a Python wrapper for Nmap, one of the most popular network scanning tools.',
     imageUrl: `${process.env.PUBLIC_URL}/python_network_scanner/network-scanner.png`,
     githubUrl: 'https://github.com/mrmrjing/python-network-scanner',
@@ -242,12 +242,21 @@ const projectsData = [
   }, 
   { 
     id: 16,
-    title: 'garmin-data-analysis',
+    title: 'Garmin Data Analysis',
     description: 'This project involves the analysis of Garmin fitness data using Python and Jupyter Notebooks. It explores the data collected from Garmin smartwatches and visualizes the user’s fitness activities, including running, cycling, and swimming, to provide insights into their performance and progress over time.',
     imageUrl: `${process.env.PUBLIC_URL}/garmin-data-analysis/garmin-245.png`,
     githubUrl: 'https://github.com/mrmrjing/garmin-data-analysis',
     featured: false 
-  }
+  }, 
+  {
+    id: 17,
+    title: 'Decentralised Healthcare Application',
+    description: 'This DApp is a blockchain-powered solution designed to securely record and manage patients’ personal and medical information. By integrating blockchain technology with IPFS storage, the application ensures that data is immutable, tamper-proof, and stored in a decentralized system, significantly reducing the risk of data breaches. It empowers patients with full control over their sensitive information, enhancing privacy and transparency in interactions with medical providers.',
+    imageUrl: `${process.env.PUBLIC_URL}/Decentralised-healthcare-application/Hardhat.png`,
+    githubUrl: 'https://github.com/mrmrjing/Healthcare-DApp-hardhat',
+    pdf: `Decentralised-healthcare-application/Blockchain_Technology_Decentralised_Application_Report`,
+    featured: false
+  },
 ];
 
 export default projectsData;
